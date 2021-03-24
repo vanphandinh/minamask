@@ -47,7 +47,7 @@ const Info: React.FC<Props> = ({ onDrop }: Props) => {
       </Title>
       <Text>
         Do you ❤️ MinaProtocol? <br />
-        Upload your photo, choose your Mina mask, download and share it to the world!
+        Upload your photo, choose your Mina mask, download and share it with the world!
       </Text>
 
       <Button {...getRootProps()}>
