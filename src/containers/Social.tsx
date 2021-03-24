@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { rem } from "polished"
 
 import SvgIcon from "../components/SvgIcon"
-import Dropdown from "../components/Dropdown"
+// import Dropdown from "../components/Dropdown"
 
 /**
  * Types
@@ -45,29 +45,21 @@ const Social: React.FC<Props> = () => {
   return (
     <Wrapper>
       <span>
-        {"Powered by "}
-        <a href="https://stake.fish/" target="_blank" rel="noreferrer">
-          stakefish
-        </a>
-        {" & "}
-        <a href="https://www.f2pool.com/" target="_blank" rel="noreferrer">
-          f2pool
+        {"Made with ❤️ by "}
+        <a href="https://minagraph.com" target="_blank" rel="noreferrer">
+          @BeaconChain (MinaGraph)
         </a>
       </span>
-      <Dropdown
-        title={<SvgIcon iconKey="twitter" />}
-        data={[
-          { name: "f2pool", url: "https://twitter.com/f2pool_official" },
-          { name: "stakefish", url: "https://twitter.com/stakefish" },
-        ]}
-      />
-      <SocialLink href="https://t.me/stakefish" target="_blank" rel="noreferrer">
+      <SocialLink href="https://twitter.com/BeaconChain" target="_blank" rel="noreferrer">
+        <SvgIcon iconKey="twitter" />
+      </SocialLink>
+      <SocialLink href="https://t.me/s_e_c_r_e_t_c_a_t" target="_blank" rel="noreferrer">
         <SvgIcon iconKey="telegram" />
       </SocialLink>
-      <SocialLink href="https://instagram.com/stakedotfish" target="_blank" rel="noreferrer">
+      {/* <SocialLink href="https://instagram.com/" target="_blank" rel="noreferrer">
         <SvgIcon iconKey="instagram" />
-      </SocialLink>
-      <SocialLink href="https://github.com/stakefish/crypto-laser-eyes" target="_blank" rel="noreferrer">
+      </SocialLink> */}
+      <SocialLink href="https://github.com/vanphandinh" target="_blank" rel="noreferrer">
         <SvgIcon iconKey="github" />
       </SocialLink>
     </Wrapper>

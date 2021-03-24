@@ -11,7 +11,7 @@ export interface VariantProps {
 }
 
 const Laser = styled.div<VariantProps>`
-  background-color: ${(props) => props.theme.colors.black};
+  background-color: ${(props) => props.theme.colors.gray};
   padding: ${rem(20)};
   border-radius: ${rem(24)};
   width: 100%;

@@ -168,10 +168,10 @@ const ButtonGroup = styled.div`
   }
 `
 
-const Sandbox: React.FC<Props> = ({ laser = Laser.Gold, portrait }: Props) => {
+const Sandbox: React.FC<Props> = ({ laser = Laser.One, portrait }: Props) => {
   const [state, setState] = useSetState<{ [key: string]: IPoint | undefined }>({
-    left: { x: 236, y: 31.81867850138373 },
-    right: { x: 270, y: 30.816437664763399 },
+    left: { x: 130, y: 90 },
+    right: { x: 190, y: 84 },
   })
 
   const stageRef = useRef(null)
@@ -235,7 +235,7 @@ const Sandbox: React.FC<Props> = ({ laser = Laser.Gold, portrait }: Props) => {
                 as="a"
                 target="_blank"
                 rel="noreferrer"
-                href="https://twitter.com/intent/tweet?text=Join%20the%20revolution.%20Be%20part%20of%20the%20laser%20eye%20family%20and%20update%20your%20profile%20picture%20today!&url=https%3A%2F%2Fcryptolasereyes.com&hashtags=LaserRayUntil100K"
+                href="https://twitter.com/intent/tweet?text=Welcome%2C+the+%40MinaProtocol+Mainnet%21%0D%0A%0D%0ALet%27s+join+the+revolution%2C+be+a+part+of+the+Mina+community+and+update+your+avatar+today.%0D%0A%0D%0A&url=https%3A%2F%2Fmask.minagraph.com&hashtags=MinaMask,MinaMainnet,PoweredByParticipants"
               >
                 <SvgIcon iconKey="share" />
                 <span>Share</span>
