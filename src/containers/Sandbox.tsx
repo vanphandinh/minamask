@@ -235,7 +235,7 @@ const Sandbox: React.FC<Props> = ({ laser = Laser.One, portrait }: Props) => {
                 as="a"
                 target="_blank"
                 rel="noreferrer"
-                href="https://twitter.com/intent/tweet?text=Welcome%2C+the+%40MinaProtocol+Mainnet%21%0D%0A%0D%0ALet%27s+join+the+revolution%2C+be+a+part+of+the+Mina+community+and+update+your+avatar+today.%0D%0A%0D%0A&url=https%3A%2F%2Fmask.minagraph.com&hashtags=MinaMask,MinaMainnet,PoweredByParticipants"
+                href="https://twitter.com/intent/tweet?text=Welcome%2C+the+%40MinaProtocol+Mainnet%21%0D%0A%0D%0ALet%27s+join+the+revolution%2C+be+a+part+of+the+Mina+community+and+update+your+avatar+today.&url=https%3A%2F%2Fmask.minagraph.com&hashtags=MinaMask,MinaMainnet,PoweredByParticipants"
               >
                 <SvgIcon iconKey="share" />
                 <span>Share</span>

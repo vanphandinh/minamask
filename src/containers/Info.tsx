@@ -42,8 +42,8 @@ const Info: React.FC<Props> = ({ onDrop }: Props) => {
   return (
     <Wrapper>
       <Title>
-        Mina <br />
-        Mask
+        Change <br />
+        Your Avatar
       </Title>
       <Text>
         Do you ❤️ MinaProtocol? <br />
