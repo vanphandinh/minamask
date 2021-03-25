@@ -170,8 +170,8 @@ const ButtonGroup = styled.div`
 
 const Sandbox: React.FC<Props> = ({ laser = Laser.One, portrait }: Props) => {
   const [state, setState] = useSetState<{ [key: string]: IPoint | undefined }>({
-    left: { x: 130, y: 90 },
-    right: { x: 190, y: 84 },
+    left: { x: 159, y: 115 },
+    right: { x: 238, y: 116 },
   })
 
   const stageRef = useRef(null)
@@ -198,16 +198,16 @@ const Sandbox: React.FC<Props> = ({ laser = Laser.One, portrait }: Props) => {
   const onExport = () => {
     if (stageRef?.current) {
       // @ts-expect-error
-      download(stageRef.current.toDataURL(), "crypto-laser-eyes.png")
+      download(stageRef.current.toDataURL(), "mina-mask.png")
     }
   }
 
   return (
     <>
-      <Wrapper preview={portrait}>
+      <Wrapper preview={portrait || "images/default.jpeg"}>
         <Stage className="stage" {...STAGE_CONFIG} ref={stageRef}>
           <Layer>
-            <Figure scaled src={portrait || "images/default.jpg"} />
+            <Figure scaled src={portrait || "images/default.jpeg"} />
 
             {lasers.map((laser) => {
               if (isNil(laser)) {
