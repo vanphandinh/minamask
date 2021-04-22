@@ -50,7 +50,7 @@ const Social: React.FC<Props> = () => {
           @BeaconChain (MinaGraph)
         </a>
       </span>
-      <SocialLink href="https://twitter.com/BeaconChain" target="_blank" rel="noreferrer">
+      <SocialLink href="https://twitter.com/van_onblock" target="_blank" rel="noreferrer">
         <SvgIcon iconKey="twitter" />
       </SocialLink>
       <SocialLink href="https://t.me/s_e_c_r_e_t_c_a_t" target="_blank" rel="noreferrer">
